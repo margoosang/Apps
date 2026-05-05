@@ -214,12 +214,9 @@ ${result.logic.map(bullet => `• ${bullet}`).join('\n')}
       {/* Header Section */}
       <header className="h-20 bg-slate-900 border-b border-slate-800 flex items-center justify-between px-6 sm:px-10 sticky top-0 z-50">
         <div className="flex items-center gap-4">
-          <img 
-            src="input_file_1.png" 
-            alt="WealthWiz Logo" 
-            className="w-10 h-10 object-contain rounded-lg shadow-lg border border-slate-700/50"
-            referrerPolicy="no-referrer"
-          />
+          <div className="w-10 h-10 bg-cyan-500 rounded-xl flex items-center justify-center shadow-[0_0_15px_rgba(6,182,212,0.4)] border border-cyan-400/30 shrink-0">
+            <TrendingUp size={22} className="text-slate-950" />
+          </div>
           <div>
             <h1 className="text-xl font-bold tracking-tight text-white leading-none">
               WealthWiz
@@ -457,14 +454,9 @@ ${result.logic.map(bullet => `• ${bullet}`).join('\n')}
                 </motion.div>
               ) : (
                 <div key="empty" className="h-[60vh] flex flex-col items-center justify-center text-slate-700 gap-8">
-                  <div className="w-16 h-16 border-2 border-slate-800 rounded-2xl flex items-center justify-center bg-slate-900 shadow-xl relative group overflow-hidden">
+                  <div className="w-16 h-16 border-2 border-slate-800 rounded-2xl flex items-center justify-center bg-slate-900 shadow-xl relative group">
                     <div className="absolute inset-0 bg-cyan-500/5 blur-xl group-hover:bg-cyan-500/10 transition-all"></div>
-                    <img 
-                      src="input_file_1.png" 
-                      alt="Logo" 
-                      className="w-10 h-10 object-contain opacity-60 group-hover:opacity-100 transition-opacity" 
-                      referrerPolicy="no-referrer"
-                    />
+                    <TrendingUp size={32} className="text-cyan-500/40 relative z-10" />
                   </div>
                   <div className="text-center space-y-2">
                      <p className="text-[10px] font-bold uppercase tracking-[0.4em] text-slate-500">Standby for Input</p>
